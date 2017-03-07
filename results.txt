@@ -1,19 +1,27 @@
 OS: windows
 output report_eols.py after running rewrite_test_targets.py and without commit:
+	OS: win
+	a.py: mixed
+	b.txt: mixed
+	c.rst: mixed
+	d.bat: mixed
+	e.foo: mixed
+	f.anim: mixed
 
-
-
-
-
+	
 commit as "initial win files"
 output report_eols.py after commit:
 
+	OS: win
+	a.py: mixed
+	b.txt: mixed
+	c.rst: mixed
+	d.bat: mixed
+	e.foo: mixed
+	f.anim: mixed
 
-
-
-
-
-
+  >>>> WC does not changes after commit
+	
 push
 
 do a fresh clone in windows
