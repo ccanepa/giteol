@@ -1,0 +1,64 @@
+OS: windows
+output report_eols.py after running rewrite_test_targets.py and without commit:
+
+
+
+
+
+commit as "initial win files"
+output report_eols.py after commit:
+
+
+
+
+
+
+
+push
+
+do a fresh clone in windows
+output report_eols.py in a new clone:
+
+
+
+
+
+
+OS: linux
+output report_eols.py after clone in linux:
+
+
+
+
+
+
+
+output report_eols.py after running rewrite_test_targets.py and without commit:
+
+
+
+
+
+
+
+
+commit as "modified in linux"
+output report_eols.py after commit:
+
+
+
+
+
+
+
+push
+
+OS: windows
+pull
+
+
+
+
+
+
+output report_eols.py after pulling the linux commit:
