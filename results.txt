@@ -27,11 +27,16 @@ push
 do a fresh clone in windows
 output report_eols.py in a new clone:
 
+	OS: win
+	a.py: LF
+	b.txt: LF
+	c.rst: LF
+	d.bat: CRLF
+	e.foo: LF
+	f.anim: mixed
 
-
-
-
-
+  >>>> some normalization has happened, but I think py, txt and rst were meant to checkout with native eol, and that is not happening here.
+	
 OS: linux
 output report_eols.py after clone in linux:
 
