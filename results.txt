@@ -36,7 +36,20 @@ output report_eols.py in a new clone:
 	f.anim: mixed
 
   >>>> some normalization has happened, but I think py, txt and rst were meant to checkout with native eol, and that is not happening here.
+  
+updated git to 2.12.0
+fresh clone from github
+output report_eols.py in the new clone:
+	OS: win
+	a.py: CRLF
+	b.txt: CRLF
+	c.rst: CRLF
+	d.bat: CRLF
+	e.foo: CRLF
+	f.anim: mixed
 	
+  >>>> ok, that is the expected status
+
 OS: linux
 output report_eols.py after clone in linux:
 
