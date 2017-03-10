@@ -110,9 +110,16 @@ push
 OS: windows
 pull
 
-
-
-
-
-
 output report_eols.py after pulling the linux commit:
+	E:\_\cocos_pristine\giteol3>py -2.7 report_eols.py
+
+	OS: win
+	a.py: CRLF
+	b.txt: CRLF
+	c.rst: CRLF
+	d.bat: CRLF
+	e.foo: CRLF
+	f.anim: mixed
+	
+  >>>> ok
+  
