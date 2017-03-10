@@ -63,6 +63,7 @@ output report_eols.py after clone in linux:
 	e.foo: LF
 	f.anim: mixed
 
+  >>>> ok, works as expected
 
 output report_eols.py after running rewrite_test_targets.py and without commit:
 
@@ -80,10 +81,17 @@ output report_eols.py after running rewrite_test_targets.py and without commit:
 commit as "modified in linux"
 output report_eols.py after commit:
 
+	pi@raspberrypi ~/giteol $ python report_eols.py
+	
+	OS: *nix
+	a.py: mixed
+	b.txt: mixed
+	c.rst: mixed
+	d.bat: mixed
+	e.foo: mixed
+	f.anim: mixed
 
-
-
-
+  >>>> eols unchanged after commit, as thw docs say
 
 
 push
