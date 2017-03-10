@@ -53,19 +53,28 @@ output report_eols.py in the new clone:
 OS: linux
 output report_eols.py after clone in linux:
 
-
-
-
-
+	pi@raspberrypi ~/giteol $ python report_eols.py
+	
+	OS: *nix
+	a.py: LF
+	b.txt: LF
+	c.rst: LF
+	d.bat: CRLF
+	e.foo: LF
+	f.anim: mixed
 
 
 output report_eols.py after running rewrite_test_targets.py and without commit:
 
+	pi@raspberrypi ~/giteol $ python report_eols.py
 
-
-
-
-
+	OS: *nix
+	a.py: mixed
+	b.txt: mixed
+	c.rst: mixed
+	d.bat: mixed
+	e.foo: mixed
+	f.anim: mixed
 
 
 commit as "modified in linux"
