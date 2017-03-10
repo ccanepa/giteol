@@ -93,7 +93,18 @@ output report_eols.py after commit:
 
   >>>> eols unchanged after commit, as thw docs say
 
+just for paranoid let push and get new clone in the raspi
+output report_eols.py after fresh clone from github
+	pi@raspberrypi ~/giteol2 $ python report_eols.py
+	OS: *nix
+	a.py: LF
+	b.txt: LF
+	c.rst: LF
+	d.bat: CRLF
+	e.foo: LF
+	f.anim: mixed
 
+  >>>> ok
 push
 
 OS: windows
